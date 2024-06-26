@@ -32,9 +32,9 @@ node browser-refresh.js
 
 ### This script
 
-Opens your ServiceNow instance page.
-Watches for changes in your specified directory.
-Refreshes the browser tab automatically whenever a file is updated.
+- Opens your ServiceNow instance page.
+- Watches for changes in your specified directory.
+- Refreshes the browser tab automatically whenever a file is updated.
 
 
 Ensure that the browser session stays active and the page does not log out due to inactivity.
