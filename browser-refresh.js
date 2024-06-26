@@ -11,13 +11,13 @@ async function setupBrowser() {
         height: 1080,
         deviceScaleFactor: 1,
     });
-    await page.goto('https://dev269213.service-now.com/csm?id=tcp_dynamic_list_demo');
+    await page.goto('URL TO PORTAL PAGE GOES HERE');
 }
 
 
 
 async function watchChanges() {
-  const watcher = chokidar.watch("E:\\proj\\todo\\sn-utils\\dev269213", {
+  const watcher = chokidar.watch("PATH TO SN-UTILS ROOT FOLDER GOES HERE", {
     ignored: /(^|[\/\\])\../,
     persistent: true,
   });
