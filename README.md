@@ -1,8 +1,17 @@
 # sn-browser-refresh
-This is meant to be used with sn-utils for when working on VSCode.
-# sn-browser-refresh
 
 This script is designed to be used with `sn-utils` when working on VSCode. It automatically refreshes a ServiceNow instance page in a browser when changes are detected in the specified directory.
+
+### This script
+
+- Opens your ServiceNow instance page.
+- Watches for changes in your specified directory.
+- Refreshes the browser tab automatically whenever a file is updated.
+
+
+Ensure that the browser session stays active and the page does not log out due to inactivity.
+
+Using this setup, you should be able to see the ServiceNow page refresh automatically every time sn-utils syncs changes to your files. This can significantly speed up your development process by reducing the need to manually refresh the page.
 
 ## Step-by-Step Setup
 
@@ -30,13 +39,3 @@ node browser-refresh.js
 
 ```
 
-### This script
-
-- Opens your ServiceNow instance page.
-- Watches for changes in your specified directory.
-- Refreshes the browser tab automatically whenever a file is updated.
-
-
-Ensure that the browser session stays active and the page does not log out due to inactivity.
-
-Using this setup, you should be able to see the ServiceNow page refresh automatically every time sn-utils syncs changes to your files. This can significantly speed up your development process by reducing the need to manually refresh the page.
