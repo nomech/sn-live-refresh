@@ -53,7 +53,7 @@ and the folder path on line 20
 ### 5. Set up sn-utils env.
 Set up the scripts you are working on within ServiceNow and ensure VScode and SN-Utils are synched.
 
-### 5. Run the script
+### 6. Run the script
 ```bash
 node browser-refresh.js
 
