@@ -1,6 +1,6 @@
 # sn-browser-refresh
 
-This script is designed to be used with `sn-utils` when working in VSCode. It automatically refreshes the browser whenever changes  are detected in the specified directory.
+This script is specifically aimed at developers working with ServiceNow portals and widgets and it is designed to be used with `sn-utils` when working in VSCode. It automatically refreshes the browser whenever changes  are detected in the specified directory.
 
 ### This script
 
@@ -9,9 +9,9 @@ This script is designed to be used with `sn-utils` when working in VSCode. It au
 - Refreshes the browser tab automatically whenever a file is updated.
 
 
-Ensure that the browser session stays active and the page does not log out due to inactivity.
+Make sure that the browser session stays active and the page does not log out due to inactivity.
 
-Using this setup, you should be able to see the ServiceNow page refresh automatically every time sn-utils syncs changes to your files. This can significantly speed up your development process by reducing the need to manually refresh the page.
+Using this setup, you should be able to see the ServiceNow page refresh automatically every time sn-utils syncs changes to your files. This can significantly speed up your development process by reducing the need to refresh the page manually.
 
 ## Step-by-Step Setup
 
@@ -34,7 +34,7 @@ npm install puppeteer chokidar
 ```
 
 ### 4. Change the URL and folder path
-Change the url path on line 14
+Change the URL path on line 14
 ```bash
   await page.goto('https://<instace-name>.service-now.com/);
 ```
@@ -50,9 +50,11 @@ and the folder path on line 20
   const watcher = chokidar.watch("/path/to/sn-utils/root/folder",
 ```
 
+### 5. Set up sn-utils env.
+Set up the scripts you are working on within ServiceNow and ensure VScode and SN-Utils are synched.
+
 ### 5. Run the script
 ```bash
 node browser-refresh.js
 
 ```
-
