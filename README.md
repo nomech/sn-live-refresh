@@ -1,4 +1,4 @@
-# sn-browser-refresh
+# sn-live-refresh
 
 This script is specifically aimed at developers working with ServiceNow portals and widgets and it is designed to be used with `sn-utils` or other tools that syncs VSCode with ServiceNow. It automatically refreshes the browser whenever changes  are detected in the specified directory.
 
